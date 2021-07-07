@@ -3,6 +3,6 @@
 3.  1. number    1 2 3 4 5
  *   2. string    kalo di kutio
  *  3. bolean    true false
- *  4. object variabel yang memiliki key
+ *  4. object       variabel yang memiliki key
  *  5. undefined
  *   6. null
