@@ -1,17 +1,25 @@
-function compareXO(xo){
-    var flagX = 0;
-    var flagO = 0;
+var pantun = "makan nasi bayar pake paku"
+// var pantunSplit = pantun.split(' ');
+// console.log(pantunSplit);
 
-    for(var i = 0; i < xo.length; i++){
-        if(xo[i] === 'x'){
-            flagX++;
-        }else{
-            flagO++;
+function pantunSplit(str) {
+    var result = [];
+    var temp = '';
+    for (var i = 0; i < str.length; i++) {
+        // console.log(str[i]);
+        if (str[i] !== ' ') {
+            temp = temp + str[i];
+        } else {
+            result.push(temp);
+            temp = '';
+        }
+        if (i === str.length - 1) {
+            result.push(temp);
+            temp = '';
         }
     }
-    var result = flagX === flagO;
-    console.log(result)
-    return result
+    return result;
 }
-console.log(compareXO('oxxoxoxxxxoooo'));
-console.log(compareXO('xxxoo'));
+
+// call function
+console.log(pantunSplit(pantun));
