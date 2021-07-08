@@ -1,10 +1,17 @@
-function cetakKotak(angka){
-    var temp = ''
-    for(var i = 0; i < angka; i++){
-        for(var j = 0; j < angka; j++){
-            temp += "#"
+function compareXO(xo){
+    var flagX = 0;
+    var flagO = 0;
+
+    for(var i = 0; i < xo.length; i++){
+        if(xo[i] === 'x'){
+            flagX++;
+        }else{
+            flagO++;
         }
-        console.log(temp);
-        temp = '';
     }
+    var result = flagX === flagO;
+    console.log(result)
+    return result
 }
+console.log(compareXO('oxxoxoxxxxoooo'));
+console.log(compareXO('xxxoo'));
