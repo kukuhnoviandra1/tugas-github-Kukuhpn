@@ -16,4 +16,4 @@ function reverseString(str) {
     }
     return temp;
 }
-console.log(reverseString("1234"));
+console.log(reverseString("12345"));
