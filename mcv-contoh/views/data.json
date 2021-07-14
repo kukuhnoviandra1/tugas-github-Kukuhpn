@@ -1,0 +1,17 @@
+[
+    {
+        "id1" : 1,
+        "name": "Dell",
+        "type": "laptop",
+        "price" : 750000,
+        "isSold": true
+    },
+    {
+        "id1" : 2,
+        "name": "HP",
+        "type": "hardware",
+        "price" : 1750000,
+        "isSold": false
+    }
+
+]
