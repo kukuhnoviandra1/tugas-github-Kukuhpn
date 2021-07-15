@@ -8,7 +8,7 @@ let kata = "saya dan SAYA suka makan nasi"
         for (let i = 0; i < str.length; i++) {
             // console.log(str[i]);
             if (str[i] !== ' ') {
-                temp = temp + str[i];
+                temp = temp + str[i].toLowerCase();
             } else {
                 result.push(temp);
                 temp = '';
